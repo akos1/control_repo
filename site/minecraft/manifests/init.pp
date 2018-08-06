@@ -33,6 +33,6 @@ install_dir => install_dir
 service{'minecraft':
 ensure => running,
 enable => true,
-require => [Package['java'], File['/opt/minecraft/ela.txt']],
+require => [Package['java'], File['/opt/minecraft/eula.txt']],
 }
 }
